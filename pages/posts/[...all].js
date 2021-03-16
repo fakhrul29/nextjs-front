@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import {useState, useEffect } from 'react'
-import useSWR from 'swr';
+// import useSWR from 'swr';
 import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
 
 import Link from 'next/link'
@@ -9,7 +9,7 @@ import Layout from "../../components/layout";
 
 
 const client = new ApolloClient({
-		  uri: 'http://192.168.1.121:4000/graphql',
+		  uri: 'http://localhost:4000/graphql',
 		  cache: new InMemoryCache()
 		});
 

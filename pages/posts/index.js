@@ -35,7 +35,7 @@ export default function AllPosts( {posts} ) {
 export async function getStaticProps() {
 	try{
 		const client = new ApolloClient({
-		  uri: 'http://192.168.1.121:4000/graphql',
+		  uri: 'http://localhost:4000/graphql',
 		  cache: new InMemoryCache()
 		});
 		
